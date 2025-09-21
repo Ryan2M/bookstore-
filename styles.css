@@ -1,0 +1,19 @@
+:root{--accent:#0b63ff;--bg:#f7f9fc;--card:#ffffff}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;background:var(--bg);color:#111}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:18px 24px;background:linear-gradient(90deg,#ffffffcc, #f4f7ffcc);box-shadow:0 2px 6px rgba(12,20,40,0.04)}
+.brand{font-weight:800;font-size:20px}
+.brand span{color:var(--accent)}
+.container{max-width:960px;margin:28px auto;padding:16px}
+.add-book, .books-list{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(12,20,40,0.04);margin-bottom:16px}
+.add-book form{display:flex;gap:8px;flex-wrap:wrap}
+.add-book input{flex:1 1 160px;padding:10px;border-radius:8px;border:1px solid #e6eef8}
+.add-book button{padding:10px 14px;border-radius:8px;border:0;background:var(--accent);color:#fff;font-weight:600}
+.books-list ul{list-style:none;padding:0;margin:0}
+.books-list li{display:flex;justify-content:space-between;align-items:center;padding:12px;border-bottom:1px solid #f0f4fb}
+.book-meta{display:flex;flex-direction:column}
+.book-title{font-weight:700}
+.book-author{font-size:13px;color:#54607a}
+.delete-btn{background:transparent;border:1px solid #ffd1d1;color:#b71c1c;padding:6px 8px;border-radius:8px}
+.site-footer{text-align:center;padding:18px;color:#68708a}
+@media(max-width:640px){.add-book form{flex-direction:column}}
